@@ -1,0 +1,159 @@
+{
+  "" : {
+    "diagnostics" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VynedamWatchApp-primary.dia",
+    "emit-module-dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VynedamWatchApp-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VynedamWatchApp-primary-emit-module.dia",
+    "pch" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VynedamWatchApp-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VynedamWatchApp-primary.swiftdeps"
+  },
+  "/Users/bhanu/Desktop/WatchOS_App/VynedamWatchApp/Models/Domain.swift" : {
+    "const-values" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/Domain.swiftconstvalues",
+    "dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/Domain.d",
+    "diagnostics" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/Domain.dia",
+    "index-unit-output-path" : "/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/Domain.o",
+    "llvm-bc" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/Domain.bc",
+    "object" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/Domain.o",
+    "swift-dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/Domain.swiftdeps",
+    "swiftmodule" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/Domain~partial.swiftmodule"
+  },
+  "/Users/bhanu/Desktop/WatchOS_App/VynedamWatchApp/Services/JarvisService.swift" : {
+    "const-values" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/JarvisService.swiftconstvalues",
+    "dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/JarvisService.d",
+    "diagnostics" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/JarvisService.dia",
+    "index-unit-output-path" : "/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/JarvisService.o",
+    "llvm-bc" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/JarvisService.bc",
+    "object" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/JarvisService.o",
+    "swift-dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/JarvisService.swiftdeps",
+    "swiftmodule" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/JarvisService~partial.swiftmodule"
+  },
+  "/Users/bhanu/Desktop/WatchOS_App/VynedamWatchApp/Services/LocationService.swift" : {
+    "const-values" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LocationService.swiftconstvalues",
+    "dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LocationService.d",
+    "diagnostics" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LocationService.dia",
+    "index-unit-output-path" : "/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LocationService.o",
+    "llvm-bc" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LocationService.bc",
+    "object" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LocationService.o",
+    "swift-dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LocationService.swiftdeps",
+    "swiftmodule" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LocationService~partial.swiftmodule"
+  },
+  "/Users/bhanu/Desktop/WatchOS_App/VynedamWatchApp/Services/VitalsService.swift" : {
+    "const-values" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VitalsService.swiftconstvalues",
+    "dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VitalsService.d",
+    "diagnostics" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VitalsService.dia",
+    "index-unit-output-path" : "/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VitalsService.o",
+    "llvm-bc" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VitalsService.bc",
+    "object" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VitalsService.o",
+    "swift-dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VitalsService.swiftdeps",
+    "swiftmodule" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VitalsService~partial.swiftmodule"
+  },
+  "/Users/bhanu/Desktop/WatchOS_App/VynedamWatchApp/Views/AgroGenView.swift" : {
+    "const-values" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/AgroGenView.swiftconstvalues",
+    "dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/AgroGenView.d",
+    "diagnostics" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/AgroGenView.dia",
+    "index-unit-output-path" : "/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/AgroGenView.o",
+    "llvm-bc" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/AgroGenView.bc",
+    "object" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/AgroGenView.o",
+    "swift-dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/AgroGenView.swiftdeps",
+    "swiftmodule" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/AgroGenView~partial.swiftmodule"
+  },
+  "/Users/bhanu/Desktop/WatchOS_App/VynedamWatchApp/Views/HomeView.swift" : {
+    "const-values" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/HomeView.swiftconstvalues",
+    "dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/HomeView.d",
+    "diagnostics" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/HomeView.dia",
+    "index-unit-output-path" : "/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/HomeView.o",
+    "llvm-bc" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/HomeView.bc",
+    "object" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/HomeView.o",
+    "swift-dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/HomeView.swiftdeps",
+    "swiftmodule" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/HomeView~partial.swiftmodule"
+  },
+  "/Users/bhanu/Desktop/WatchOS_App/VynedamWatchApp/Views/JarvisView.swift" : {
+    "const-values" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/JarvisView.swiftconstvalues",
+    "dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/JarvisView.d",
+    "diagnostics" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/JarvisView.dia",
+    "index-unit-output-path" : "/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/JarvisView.o",
+    "llvm-bc" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/JarvisView.bc",
+    "object" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/JarvisView.o",
+    "swift-dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/JarvisView.swiftdeps",
+    "swiftmodule" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/JarvisView~partial.swiftmodule"
+  },
+  "/Users/bhanu/Desktop/WatchOS_App/VynedamWatchApp/Views/LawGenView.swift" : {
+    "const-values" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LawGenView.swiftconstvalues",
+    "dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LawGenView.d",
+    "diagnostics" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LawGenView.dia",
+    "index-unit-output-path" : "/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LawGenView.o",
+    "llvm-bc" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LawGenView.bc",
+    "object" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LawGenView.o",
+    "swift-dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LawGenView.swiftdeps",
+    "swiftmodule" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LawGenView~partial.swiftmodule"
+  },
+  "/Users/bhanu/Desktop/WatchOS_App/VynedamWatchApp/Views/LearningView.swift" : {
+    "const-values" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LearningView.swiftconstvalues",
+    "dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LearningView.d",
+    "diagnostics" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LearningView.dia",
+    "index-unit-output-path" : "/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LearningView.o",
+    "llvm-bc" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LearningView.bc",
+    "object" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LearningView.o",
+    "swift-dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LearningView.swiftdeps",
+    "swiftmodule" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/LearningView~partial.swiftmodule"
+  },
+  "/Users/bhanu/Desktop/WatchOS_App/VynedamWatchApp/Views/PrescriptoView.swift" : {
+    "const-values" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/PrescriptoView.swiftconstvalues",
+    "dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/PrescriptoView.d",
+    "diagnostics" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/PrescriptoView.dia",
+    "index-unit-output-path" : "/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/PrescriptoView.o",
+    "llvm-bc" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/PrescriptoView.bc",
+    "object" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/PrescriptoView.o",
+    "swift-dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/PrescriptoView.swiftdeps",
+    "swiftmodule" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/PrescriptoView~partial.swiftmodule"
+  },
+  "/Users/bhanu/Desktop/WatchOS_App/VynedamWatchApp/Views/SafeGuardView.swift" : {
+    "const-values" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SafeGuardView.swiftconstvalues",
+    "dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SafeGuardView.d",
+    "diagnostics" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SafeGuardView.dia",
+    "index-unit-output-path" : "/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SafeGuardView.o",
+    "llvm-bc" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SafeGuardView.bc",
+    "object" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SafeGuardView.o",
+    "swift-dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SafeGuardView.swiftdeps",
+    "swiftmodule" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SafeGuardView~partial.swiftmodule"
+  },
+  "/Users/bhanu/Desktop/WatchOS_App/VynedamWatchApp/Views/SettingsView.swift" : {
+    "const-values" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/bhanu/Desktop/WatchOS_App/VynedamWatchApp/Views/SirenView.swift" : {
+    "const-values" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SirenView.swiftconstvalues",
+    "dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SirenView.d",
+    "diagnostics" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SirenView.dia",
+    "index-unit-output-path" : "/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SirenView.o",
+    "llvm-bc" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SirenView.bc",
+    "object" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SirenView.o",
+    "swift-dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SirenView.swiftdeps",
+    "swiftmodule" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/SirenView~partial.swiftmodule"
+  },
+  "/Users/bhanu/Desktop/WatchOS_App/VynedamWatchApp/VynedamWatchAppApp.swift" : {
+    "const-values" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VynedamWatchAppApp.swiftconstvalues",
+    "dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VynedamWatchAppApp.d",
+    "diagnostics" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VynedamWatchAppApp.dia",
+    "index-unit-output-path" : "/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VynedamWatchAppApp.o",
+    "llvm-bc" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VynedamWatchAppApp.bc",
+    "object" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VynedamWatchAppApp.o",
+    "swift-dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VynedamWatchAppApp.swiftdeps",
+    "swiftmodule" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/VynedamWatchAppApp~partial.swiftmodule"
+  },
+  "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/bhanu/Desktop/WatchOS_App/build/Build/Intermediates.noindex/VynedamWatchApp.build/Debug-watchsimulator/VynedamWatchApp.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}
