@@ -6,48 +6,6 @@
 	<integer>12</integer>
 	<key>logs</key>
 	<dict>
-		<key>63459F83-5825-4F3E-B2F3-682E1C955FB1</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>63459F83-5825-4F3E-B2F3-682E1C955FB1.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>VynedamWatchApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>VynedamWatchApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building project VynedamWatchApp with scheme VynedamWatchApp</string>
-			<key>timeStartedRecording</key>
-			<real>806028707.13147295</real>
-			<key>timeStoppedRecording</key>
-			<real>806028717.95733202</real>
-			<key>title</key>
-			<string>Building project VynedamWatchApp with scheme VynedamWatchApp</string>
-			<key>uniqueIdentifier</key>
-			<string>63459F83-5825-4F3E-B2F3-682E1C955FB1</string>
-		</dict>
 		<key>B68FC21B-A571-4513-A110-93D833847C38</key>
 		<dict>
 			<key>className</key>
@@ -89,6 +47,48 @@
 			<string>Building project VynedamWatchApp with scheme VynedamWatchApp</string>
 			<key>uniqueIdentifier</key>
 			<string>B68FC21B-A571-4513-A110-93D833847C38</string>
+		</dict>
+		<key>D9E88E88-A701-4153-A16B-7D32AFA100DD</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D9E88E88-A701-4153-A16B-7D32AFA100DD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>VynedamWatchApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>VynedamWatchApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project VynedamWatchApp with scheme VynedamWatchApp and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>806293878.93891299</real>
+			<key>timeStoppedRecording</key>
+			<real>806293880.86942899</real>
+			<key>title</key>
+			<string>Building project VynedamWatchApp with scheme VynedamWatchApp and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>D9E88E88-A701-4153-A16B-7D32AFA100DD</string>
 		</dict>
 	</dict>
 </dict>
