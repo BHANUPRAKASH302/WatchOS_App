@@ -24,9 +24,14 @@ struct LawGenView: View {
         ScrollView {
             VStack(spacing: 8) {
                 // Header
-                HStack {
-                    Image(systemName: "scalemass.fill")
-                        .foregroundColor(Color(red: 0.95, green: 0.6, blue: 0.1))
+                HStack(spacing: 6) {
+                    Image(Domain.lawgen.imageName)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 22, height: 22)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Domain.lawgen.themeColor, lineWidth: 1.5))
+                        .shadow(color: Domain.lawgen.themeColor.opacity(0.4), radius: 3)
                     Text("LawGen AI")
                         .font(.headline)
                 }

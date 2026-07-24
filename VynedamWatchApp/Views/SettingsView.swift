@@ -64,7 +64,7 @@ struct SettingsView: View {
                 
                 // Info block
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Vynedam watchOS App")
+                    Text("Multi-Domain Assistant")
                         .font(.system(size: 8, weight: .bold))
                         .foregroundColor(.gray)
                     Text("Version 1.0.0 (Standalone)")

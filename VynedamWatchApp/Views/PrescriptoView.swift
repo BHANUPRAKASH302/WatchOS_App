@@ -14,9 +14,14 @@ struct PrescriptoView: View {
         ScrollView {
             VStack(spacing: 8) {
                 // Title
-                HStack {
-                    Image(systemName: "heart.text.square.fill")
-                        .foregroundColor(Color(red: 0.2, green: 0.8, blue: 0.6))
+                HStack(spacing: 6) {
+                    Image(Domain.prescripto.imageName)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 22, height: 22)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Domain.prescripto.themeColor, lineWidth: 1.5))
+                        .shadow(color: Domain.prescripto.themeColor.opacity(0.4), radius: 3)
                     Text("Prescripto")
                         .font(.headline)
                 }

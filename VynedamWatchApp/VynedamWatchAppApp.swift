@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct VynedamWatchAppApp: App {
+struct MultiDomainAssistantApp: App {
     @StateObject private var jarvisService = JarvisService()
     @StateObject private var vitalsService = VitalsService()
     @StateObject private var locationService = LocationService()

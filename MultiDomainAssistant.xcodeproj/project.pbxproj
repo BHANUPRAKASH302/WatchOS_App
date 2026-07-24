@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01513058E5E7D1CD1E2BE6E4 /* JarvisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A9C46985B4504EE692A249 /* JarvisService.swift */; };
+		34BBD44A26C71E8727202329 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA668D163FF4819DDAA540CD /* HomeView.swift */; };
+		4F7ADA6ECF078CF5E8B8BAFF /* VynedamWatchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E31194FB90650A396A9A46E /* VynedamWatchAppApp.swift */; };
+		7743A78587DD00702A29F161 /* SafeGuardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F703EFA43A5EAFC4D32B2E40 /* SafeGuardView.swift */; };
+		79C738C9D390B51C87D7B543 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C19D75022FE96859D09BB5C /* SettingsView.swift */; };
+		7C27E585B3CFDE6B4C0DA036 /* PrescriptoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D471F7B42B72370290A879C9 /* PrescriptoView.swift */; };
+		85A44B2725F28652A906E248 /* LearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACAB3566C6A0BDF874C8D4 /* LearningView.swift */; };
+		8E6E8677E75ED2469A53F62F /* VitalsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E96470D3A53652151CEFB3C /* VitalsService.swift */; };
+		948EFA1B362E200AFAB99FE3 /* AgroGenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA173CFB4E657BE6382EEB32 /* AgroGenView.swift */; };
+		AA4485E3EE89B524FDD0B0A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A491D410BD3F3BD3E5652E /* Assets.xcassets */; };
+		CED6C221F03F18DEBD1C44D0 /* SirenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18ABEBD5078E88D50DCCC58 /* SirenView.swift */; };
+		D00DDD18C897F19271557411 /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B46A6D1A16B2A4E54642 /* Domain.swift */; };
+		E0238CF335B992F9014A0183 /* JarvisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B747DDC025290F7A3DFB2CB9 /* JarvisView.swift */; };
+		F4E729853F71EA4FF6C5EC31 /* LawGenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47DC1D2D8AED30828DC507 /* LawGenView.swift */; };
+		F8A69165965564CB68710F87 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4E2E46140022D665E131A2 /* LocationService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0436B46A6D1A16B2A4E54642 /* Domain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
+		17A9C46985B4504EE692A249 /* JarvisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JarvisService.swift; sourceTree = "<group>"; };
+		2E96470D3A53652151CEFB3C /* VitalsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalsService.swift; sourceTree = "<group>"; };
+		3C4E2E46140022D665E131A2 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		46ACAB3566C6A0BDF874C8D4 /* LearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningView.swift; sourceTree = "<group>"; };
+		4E31194FB90650A396A9A46E /* VynedamWatchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VynedamWatchAppApp.swift; sourceTree = "<group>"; };
+		8C19D75022FE96859D09BB5C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8E47DC1D2D8AED30828DC507 /* LawGenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawGenView.swift; sourceTree = "<group>"; };
+		AA668D163FF4819DDAA540CD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B747DDC025290F7A3DFB2CB9 /* JarvisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JarvisView.swift; sourceTree = "<group>"; };
+		B91BE038FD612E0B79A6CACA /* MultiDomainAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiDomainAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C18ABEBD5078E88D50DCCC58 /* SirenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SirenView.swift; sourceTree = "<group>"; };
+		D471F7B42B72370290A879C9 /* PrescriptoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptoView.swift; sourceTree = "<group>"; };
+		EA173CFB4E657BE6382EEB32 /* AgroGenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgroGenView.swift; sourceTree = "<group>"; };
+		F6A491D410BD3F3BD3E5652E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F703EFA43A5EAFC4D32B2E40 /* SafeGuardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeGuardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		00A7ECB5774635C101222792 = {
+			isa = PBXGroup;
+			children = (
+				7903318F51E40BBE282297A1 /* VynedamWatchApp */,
+				FEC23985B7398332C83E339A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7903318F51E40BBE282297A1 /* VynedamWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				F6A491D410BD3F3BD3E5652E /* Assets.xcassets */,
+				4E31194FB90650A396A9A46E /* VynedamWatchAppApp.swift */,
+				A294731FE717B6F5FCE93ED5 /* Models */,
+				DEE9DEB67AA263740CC5A5E1 /* Services */,
+				B97CF55BDA9E42FFB4357B3E /* Views */,
+			);
+			path = VynedamWatchApp;
+			sourceTree = "<group>";
+		};
+		A294731FE717B6F5FCE93ED5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0436B46A6D1A16B2A4E54642 /* Domain.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B97CF55BDA9E42FFB4357B3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA173CFB4E657BE6382EEB32 /* AgroGenView.swift */,
+				AA668D163FF4819DDAA540CD /* HomeView.swift */,
+				B747DDC025290F7A3DFB2CB9 /* JarvisView.swift */,
+				8E47DC1D2D8AED30828DC507 /* LawGenView.swift */,
+				46ACAB3566C6A0BDF874C8D4 /* LearningView.swift */,
+				D471F7B42B72370290A879C9 /* PrescriptoView.swift */,
+				F703EFA43A5EAFC4D32B2E40 /* SafeGuardView.swift */,
+				8C19D75022FE96859D09BB5C /* SettingsView.swift */,
+				C18ABEBD5078E88D50DCCC58 /* SirenView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEE9DEB67AA263740CC5A5E1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				17A9C46985B4504EE692A249 /* JarvisService.swift */,
+				3C4E2E46140022D665E131A2 /* LocationService.swift */,
+				2E96470D3A53652151CEFB3C /* VitalsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FEC23985B7398332C83E339A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B91BE038FD612E0B79A6CACA /* MultiDomainAssistant.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C19D650869CA797B7CE3DDC6 /* MultiDomainAssistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BB922C22BDDBFA969CABD6D /* Build configuration list for PBXNativeTarget "MultiDomainAssistant" */;
+			buildPhases = (
+				0E28C22DB01385DD21981233 /* Sources */,
+				C4A54527B304627A4406B054 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiDomainAssistant;
+			packageProductDependencies = (
+			);
+			productName = MultiDomainAssistant;
+			productReference = B91BE038FD612E0B79A6CACA /* MultiDomainAssistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6E2C92DBBA81D223BD3AD75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 07F6B58A40CF88406FC72ECA /* Build configuration list for PBXProject "MultiDomainAssistant" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 00A7ECB5774635C101222792;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FEC23985B7398332C83E339A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C19D650869CA797B7CE3DDC6 /* MultiDomainAssistant */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4A54527B304627A4406B054 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4485E3EE89B524FDD0B0A7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E28C22DB01385DD21981233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948EFA1B362E200AFAB99FE3 /* AgroGenView.swift in Sources */,
+				D00DDD18C897F19271557411 /* Domain.swift in Sources */,
+				34BBD44A26C71E8727202329 /* HomeView.swift in Sources */,
+				01513058E5E7D1CD1E2BE6E4 /* JarvisService.swift in Sources */,
+				E0238CF335B992F9014A0183 /* JarvisView.swift in Sources */,
+				F4E729853F71EA4FF6C5EC31 /* LawGenView.swift in Sources */,
+				85A44B2725F28652A906E248 /* LearningView.swift in Sources */,
+				F8A69165965564CB68710F87 /* LocationService.swift in Sources */,
+				7C27E585B3CFDE6B4C0DA036 /* PrescriptoView.swift in Sources */,
+				7743A78587DD00702A29F161 /* SafeGuardView.swift in Sources */,
+				79C738C9D390B51C87D7B543 /* SettingsView.swift in Sources */,
+				CED6C221F03F18DEBD1C44D0 /* SirenView.swift in Sources */,
+				8E6E8677E75ED2469A53F62F /* VitalsService.swift in Sources */,
+				4F7ADA6ECF078CF5E8B8BAFF /* VynedamWatchAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		32D6263F8A327454ABAFE5EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Multi-Domain Assistant";
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vynedam.watchapp;
+				PRODUCT_NAME = "Multi-Domain Assistant";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		3D444FAE9300DDF845501B1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7682A956D0D28C70FE54F639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7A18AE90137FC943282BCF7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Multi-Domain Assistant";
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vynedam.watchapp;
+				PRODUCT_NAME = "Multi-Domain Assistant";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07F6B58A40CF88406FC72ECA /* Build configuration list for PBXProject "MultiDomainAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7682A956D0D28C70FE54F639 /* Debug */,
+				3D444FAE9300DDF845501B1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3BB922C22BDDBFA969CABD6D /* Build configuration list for PBXNativeTarget "MultiDomainAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32D6263F8A327454ABAFE5EF /* Debug */,
+				7A18AE90137FC943282BCF7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6E2C92DBBA81D223BD3AD75 /* Project object */;
+}

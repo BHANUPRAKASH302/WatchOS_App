@@ -19,9 +19,14 @@ struct AgroGenView: View {
         ScrollView {
             VStack(spacing: 8) {
                 // Header
-                HStack {
-                    Image(systemName: "leaf.fill")
-                        .foregroundColor(Color(red: 0.3, green: 0.75, blue: 0.2))
+                HStack(spacing: 6) {
+                    Image(Domain.agrogen.imageName)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 22, height: 22)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Domain.agrogen.themeColor, lineWidth: 1.5))
+                        .shadow(color: Domain.agrogen.themeColor.opacity(0.4), radius: 3)
                     Text("AgroGen")
                         .font(.headline)
                 }

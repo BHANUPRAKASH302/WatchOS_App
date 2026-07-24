@@ -17,107 +17,184 @@ struct HomeView: View {
             ZStack {
                 Color.black.ignoresSafeArea()
                 
-                VStack(spacing: 4) {
-                    // Top Header bar: Heart rate and settings
-                    HStack {
-                        HStack(spacing: 2) {
-                            Image(systemName: "heart.fill")
-                                .foregroundColor(.red)
-                                .scaleEffect(isPulse ? 1.1 : 0.9)
-                                .animation(.easeInOut(duration: 0.6).repeatForever(), value: isPulse)
-                            Text("\(vitalsService.heartRate) BPM")
-                                .font(.system(size: 11, weight: .semibold))
-                        }
-                        
-                        Spacer()
-                        
-                        NavigationLink(destination: SettingsView()) {
-                            Image(systemName: "gearshape.fill")
-                                .font(.system(size: 12))
-                                .foregroundColor(.gray)
-                        }
-                        .buttonStyle(.plain)
-                    }
-                    .padding(.horizontal, 4)
-                    
-                    // Domain Picker Card
-                    let activeDomain = domains[Int(clamp(crownIndex, min: 0, max: Double(domains.count - 1)))]
-                    
-                    NavigationLink(destination: destinationView(for: activeDomain)) {
-                        VStack(alignment: .leading, spacing: 2) {
+                ScrollViewReader { proxy in
+                    ScrollView {
+                        VStack(spacing: 8) {
+                            // Top Header bar: Heart rate and settings
                             HStack {
-                                Image(systemName: activeDomain.icon)
-                                    .foregroundColor(activeDomain.themeColor)
-                                    .font(.headline)
-                                Text(activeDomain.title)
-                                    .font(.system(size: 14, weight: .bold))
-                                    .foregroundColor(.white)
+                                HStack(spacing: 3) {
+                                    Image(systemName: "heart.fill")
+                                        .foregroundColor(.red)
+                                        .scaleEffect(isPulse ? 1.15 : 0.88)
+                                        .animation(.easeInOut(duration: 0.6).repeatForever(), value: isPulse)
+                                    Text("\(vitalsService.heartRate) BPM")
+                                        .font(.system(size: 10, weight: .bold))
+                                }
+                                
+                                Spacer()
+                                
+                                NavigationLink(destination: SettingsView()) {
+                                    Image(systemName: "gearshape.fill")
+                                        .font(.system(size: 11))
+                                        .foregroundColor(.gray)
+                                }
+                                .buttonStyle(.plain)
                             }
+                            .padding(.horizontal, 4)
                             
-                            Text(activeDomain.description)
-                                .font(.system(size: 10))
-                                .foregroundColor(.white.opacity(0.8))
-                                .lineLimit(2)
-                                .multilineTextAlignment(.leading)
-                        }
-                        .padding(8)
-                        .frame(maxWidth: .infinity, minHeight: 60)
-                        .background(
-                            RoundedRectangle(cornerRadius: 12)
-                                .fill(activeDomain.themeColor.opacity(0.15))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 12)
-                                        .stroke(activeDomain.themeColor, lineWidth: 1.5)
-                                )
-                        )
-                    }
-                    .buttonStyle(.plain)
-                    
-                    // Crown Indicator
-                    HStack(spacing: 3) {
-                        ForEach(0..<domains.count, id: \.self) { index in
-                            Circle()
-                                .fill(index == Int(crownIndex) ? domains[index].themeColor : Color.gray.opacity(0.5))
-                                .frame(width: index == Int(crownIndex) ? 6 : 4, height: index == Int(crownIndex) ? 6 : 4)
-                        }
-                    }
-                    .padding(.vertical, 2)
-                    
-                    // Bottom Controls: SOS and JARVIS voice
-                    HStack(spacing: 8) {
-                        Button(action: {
-                            showSiren = true
-                        }) {
-                            HStack {
-                                Image(systemName: "exclamationmark.shield.fill")
-                                Text("SOS")
+                            // App Logo Banner Card
+                            VStack(spacing: 4) {
+                                Image("AppLogo")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 44, height: 44)
+                                    .clipShape(Circle())
+                                    .overlay(Circle().stroke(Color.purple.opacity(0.6), lineWidth: 1.5))
+                                    .shadow(color: .purple.opacity(0.4), radius: 4)
+                                
+                                Text("Multi-Domain Assistant")
                                     .font(.system(size: 12, weight: .bold))
+                                    .foregroundColor(.white)
+                                    .multilineTextAlignment(.center)
+                                
+                                Text("Powered by Ollama Local LLM")
+                                    .font(.system(size: 8, weight: .medium))
+                                    .foregroundColor(Color.purple.opacity(0.8))
                             }
-                            .foregroundColor(.white)
+                            .padding(8)
                             .frame(maxWidth: .infinity)
-                            .padding(.vertical, 6)
-                            .background(Color.red)
-                            .cornerRadius(10)
-                        }
-                        .buttonStyle(.plain)
-                        
-                        NavigationLink(destination: JarvisView()) {
+                            .background(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill(Color.white.opacity(0.04))
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 12)
+                                            .stroke(LinearGradient(
+                                                colors: [Color.purple.opacity(0.4), Color.blue.opacity(0.2)],
+                                                startPoint: .topLeading,
+                                                endPoint: .bottomTrailing
+                                            ), lineWidth: 1)
+                                    )
+                            )
+                            
+                            // Bottom Controls: SOS and JARVIS AI (LLM)
+                            HStack(spacing: 6) {
+                                Button(action: {
+                                    showSiren = true
+                                }) {
+                                    HStack(spacing: 3) {
+                                        Image(systemName: "exclamationmark.shield.fill")
+                                            .font(.system(size: 10))
+                                        Text("SOS")
+                                            .font(.system(size: 11, weight: .bold))
+                                    }
+                                    .foregroundColor(.white)
+                                    .frame(maxWidth: .infinity)
+                                    .padding(.vertical, 6)
+                                    .background(LinearGradient(
+                                        colors: [Color.red, Color(red: 0.7, green: 0.0, blue: 0.0)],
+                                        startPoint: .top,
+                                        endPoint: .bottom
+                                    ))
+                                    .cornerRadius(8)
+                                    .shadow(color: .red.opacity(0.4), radius: 2)
+                                }
+                                .buttonStyle(.plain)
+                                
+                                NavigationLink(destination: JarvisView()) {
+                                    HStack(spacing: 3) {
+                                        Image(systemName: "sparkles")
+                                            .font(.system(size: 10))
+                                        Text("JARVIS AI")
+                                            .font(.system(size: 11, weight: .bold))
+                                    }
+                                    .foregroundColor(.white)
+                                    .frame(maxWidth: .infinity)
+                                    .padding(.vertical, 6)
+                                    .background(LinearGradient(
+                                        colors: [Color(red: 0.55, green: 0.35, blue: 0.95), Color(red: 0.35, green: 0.2, blue: 0.75)],
+                                        startPoint: .top,
+                                        endPoint: .bottom
+                                    ))
+                                    .cornerRadius(8)
+                                    .shadow(color: Color.purple.opacity(0.4), radius: 2)
+                                }
+                                .buttonStyle(.plain)
+                            }
+                            .padding(.horizontal, 2)
+                            
+                            Divider()
+                                .background(Color.white.opacity(0.12))
+                                .padding(.vertical, 2)
+                            
+                            // Watch Options Label
                             HStack {
-                                Image(systemName: "mic.fill")
-                                Text("JARVIS")
-                                    .font(.system(size: 12, weight: .bold))
+                                Text("Watch Options")
+                                    .font(.system(size: 10, weight: .bold))
+                                    .foregroundColor(.gray)
+                                Spacer()
                             }
-                            .foregroundColor(.white)
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, 6)
-                            .background(Color(red: 0.55, green: 0.35, blue: 0.95))
-                            .cornerRadius(10)
+                            .padding(.horizontal, 4)
+                            
+                            // Scrollable list of domains with custom image icons
+                            ForEach(0..<domains.count, id: \.self) { index in
+                                let domain = domains[index]
+                                let isHighlighted = index == Int(crownIndex)
+                                
+                                NavigationLink(destination: destinationView(for: domain).onAppear {
+                                    jarvisService.selectedDomain = domain
+                                }) {
+                                    HStack(spacing: 8) {
+                                        // Custom Image Icon replacing emojis
+                                        Image(domain.imageName)
+                                            .resizable()
+                                            .scaledToFill()
+                                            .frame(width: 28, height: 28)
+                                            .clipShape(Circle())
+                                            .overlay(
+                                                Circle()
+                                                    .stroke(domain.themeColor, lineWidth: 1.5)
+                                            )
+                                            .shadow(color: domain.themeColor.opacity(0.4), radius: 3)
+                                        
+                                        VStack(alignment: .leading, spacing: 1) {
+                                            Text(domain.title)
+                                                .font(.system(size: 11, weight: .bold))
+                                                .foregroundColor(.white)
+                                            Text(domain.description)
+                                                .font(.system(size: 8))
+                                                .foregroundColor(.white.opacity(0.75))
+                                                .lineLimit(1)
+                                        }
+                                        Spacer()
+                                        
+                                        Image(systemName: "chevron.right")
+                                            .font(.system(size: 9, weight: .bold))
+                                            .foregroundColor(isHighlighted ? domain.themeColor : .gray.opacity(0.6))
+                                    }
+                                    .padding(8)
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .fill(isHighlighted ? domain.themeColor.opacity(0.18) : Color.white.opacity(0.05))
+                                            .overlay(
+                                                RoundedRectangle(cornerRadius: 10)
+                                                    .stroke(isHighlighted ? domain.themeColor : Color.white.opacity(0.08), lineWidth: isHighlighted ? 1.5 : 1.0)
+                                                    .shadow(color: isHighlighted ? domain.themeColor.opacity(0.5) : .clear, radius: 4)
+                                            )
+                                    )
+                                }
+                                .buttonStyle(.plain)
+                                .id(index)
+                            }
                         }
-                        .buttonStyle(.plain)
+                        .padding(.bottom, 12)
                     }
-                    .padding(.horizontal, 4)
+                    .onChange(of: crownIndex) { oldValue, newValue in
+                        let targetIndex = Int(newValue)
+                        withAnimation(.easeInOut(duration: 0.3)) {
+                            proxy.scrollTo(targetIndex, anchor: .center)
+                        }
+                    }
                 }
-                .padding(.bottom, 2)
             }
             .focusable(true)
             .digitalCrownRotation(
@@ -136,12 +213,6 @@ struct HomeView: View {
                 isPulse = true
             }
         }
-    }
-    
-    private func clamp(_ value: Double, min: Double, max: Double) -> Int {
-        if value < min { return Int(min) }
-        if value > max { return Int(max) }
-        return Int(value)
     }
     
     @ViewBuilder

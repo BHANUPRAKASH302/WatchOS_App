@@ -21,6 +21,17 @@ enum Domain: String, CaseIterable, Identifiable {
         }
     }
     
+    var imageName: String {
+        switch self {
+        case .safeguard: return "Safety"
+        case .prescripto: return "HealthCare"
+        case .jarvis: return "AppLogo"
+        case .learning: return "Education"
+        case .agrogen: return "Agriculture"
+        case .lawgen: return "LawGen"
+        }
+    }
+    
     var icon: String {
         switch self {
         case .safeguard: return "shield.fill"
@@ -47,7 +58,7 @@ enum Domain: String, CaseIterable, Identifiable {
         switch self {
         case .safeguard: return "Emergency SOS, GPS, and active protection."
         case .prescripto: return "Vitals monitor, fall detection, and medical alerts."
-        case .jarvis: return "Voice-first assistant and streaming AI answers."
+        case .jarvis: return "Local LLM assistant powered by Ollama."
         case .learning: return "Bite-sized micro-flashcards and study streak."
         case .agrogen: return "Weather forecast, farm logs, and crop status."
         case .lawgen: return "Know your rights cards and legal resources."

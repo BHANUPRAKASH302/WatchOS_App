@@ -45,9 +45,14 @@ struct LearningView: View {
         ScrollView {
             VStack(spacing: 8) {
                 // Header
-                HStack {
-                    Image(systemName: "book.closed.fill")
-                        .foregroundColor(Color(red: 0.18, green: 0.5, blue: 0.98))
+                HStack(spacing: 6) {
+                    Image(Domain.learning.imageName)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 22, height: 22)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Domain.learning.themeColor, lineWidth: 1.5))
+                        .shadow(color: Domain.learning.themeColor.opacity(0.4), radius: 3)
                     Text("Learning")
                         .font(.headline)
                 }

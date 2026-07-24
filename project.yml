@@ -1,8 +1,8 @@
-name: VynedamWatchApp
+name: MultiDomainAssistant
 options:
   bundleIdPrefix: com.vynedam
 targets:
-  VynedamWatchApp:
+  MultiDomainAssistant:
     type: application
     platform: watchOS
     deploymentTarget: "10.0"
@@ -10,6 +10,8 @@ targets:
       - VynedamWatchApp
     settings:
       base:
+        PRODUCT_NAME: "Multi-Domain Assistant"
+        INFOPLIST_KEY_CFBundleDisplayName: "Multi-Domain Assistant"
         PRODUCT_BUNDLE_IDENTIFIER: com.vynedam.watchapp
         INFOPLIST_KEY_WKApplication: YES
         INFOPLIST_KEY_WKWatchOnly: YES

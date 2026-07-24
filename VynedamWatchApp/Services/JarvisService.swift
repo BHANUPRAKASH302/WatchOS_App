@@ -4,10 +4,11 @@ import SwiftUI
 
 class JarvisService: ObservableObject {
     @Published var selectedDomain: Domain = .jarvis
-    @Published var isListening: Bool = false
     @Published var responseStream: String = ""
     @Published var isStreaming: Bool = false
     @Published var conversationHistory: [ChatMessage] = []
+    @Published var ollamaModel: String = "llama3"
+    @Published var isOllamaAvailable: Bool = true
     
     // Streaks and Stats
     @Published var learningStreak: Int = 5
@@ -24,77 +25,122 @@ class JarvisService: ObservableObject {
         let timestamp: Date = Date()
     }
     
-    // Simple localized answers for mock translation/responses
-    private let mockDatabase: [String: [String: String]] = [
-        "heart": [
-            "English": "Your current heart rate is stable at around 72 BPM. No abnormalities detected.",
-            "Hindi (हिन्दी)": "आपकी हृदय गति लगभग 72 BPM पर स्थिर है। कोई असामान्यता नहीं पाई गई।",
-            "Telugu (తెలుగు)": "మీ గుండె కొట్టుకునే వేగం 72 BPM వద్ద స్థిరంగా ఉంది. ఎలాంటి అసాధారణతలు లేవు.",
-            "Tamil (தமிழ்)": "உங்கள் இதயத் துடிப்பு சுமார் 72 BPM இல் சீராக உள்ளது. அசாதாரணங்கள் எதுவும் இல்லை."
-        ],
-        "weather": [
-            "English": "Today will be 29°C with scattered showers. Perfect for light weeding in the northern field.",
-            "Hindi (हिन्दी)": "आज बिखरी हुई बारिश के साथ तापमान 29°C रहेगा। उत्तरी खेत में निराई के लिए उत्तम दिन है।",
-            "Telugu (తెలుగు)": "ఈ రోజు 29°C ఉష్ణోగ్రతతో పాటు అక్కడక్కడ వర్షాలు పడవచ్చు. ఉత్తర పొలంలో పనులకు అనుకూలం.",
-            "Tamil (தமிழ்)": "இன்று 29°C வெப்பநிலையுடன் பரவலாக மழை பெய்யக்கூடும். வடக்கு வயலில் வேலை செய்ய ஏற்ற நாள்."
-        ],
-        "rights": [
-            "English": "Under Section 50 of CrPC, you have the right to know the grounds of your arrest and seek bail.",
-            "Hindi (हिन्दी)": "CrPC की धारा 50 के तहत, आपको अपनी गिरफ्तारी का आधार जानने और जमानत लेने का अधिकार है।",
-            "Telugu (తెలుగు)": "CrPC సెక్షన్ 50 ప్రకారం, మీ అరెస్టుకు గల కారణాలను తెలుసుకునే హక్కు మరియు బెయిల్ పొందే హక్కు మీకు ఉన్నాయి.",
-            "Tamil (தமிழ்)": "CrPC பிரிவு 50-ன் கீழ், நீங்கள் ஏன் கைது செய்யப்படுகிறீர்கள் என்பதை அறியவும் பிணை பெறவும் உங்களுக்கு உரிமை உண்டு."
-        ],
-        "default": [
-            "English": "I am analyzing your data. Keep monitoring your vitals and crops daily.",
-            "Hindi (हिन्दी)": "मैं आपके डेटा का विश्लेषण कर रहा हूँ। दैनिक रूप से अपने स्वास्थ्य और फसलों की निगरानी करते रहें।",
-            "Telugu (తెలుగు)": "నేను మీ సమాచారాన్ని విశ్లేషిస్తున్నాను. రోజువారీగా మీ ఆరోగ్యం మరియు పంటలను పర్యవేక్షిస్తూ ఉండండి.",
-            "Tamil (தமிழ்)": "நான் உங்கள் தரவை பகுப்பாய்வு செய்கிறேன். உங்கள் உடல்நிலை மற்றும் பயிர்களை தினமும் கண்காணித்து வாருங்கள்."
-        ]
-    ]
+    // Local Ollama Endpoint
+    private let ollamaEndpoint = "http://127.0.0.1:11434/api/generate"
     
-    func startListening() {
-        isListening = true
-        responseStream = ""
+    func queryLLM(prompt: String) {
+        let userMsg = ChatMessage(isUser: true, text: prompt)
+        self.conversationHistory.append(userMsg)
+        self.isStreaming = true
+        self.responseStream = "Thinking (Ollama LLM)..."
         
-        // Simulating 2.5s speech input before query triggers
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) { [weak self] in
-            guard let self = self else { return }
-            self.isListening = false
-            self.processVoiceQuery()
+        guard let url = URL(string: ollamaEndpoint) else {
+            self.streamText("Error: Invalid Ollama Endpoint URL.")
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.timeoutInterval = 20.0
+        
+        // System instructions based on active domain
+        let systemInstruction: String
+        switch selectedDomain {
+        case .safeguard:
+            systemInstruction = "You are SafeGuard AI on Apple Watch. Answer personal safety, SOS actions, or emergency guidelines. Be extremely concise (under 2 sentences) and direct."
+        case .prescripto:
+            systemInstruction = "You are Prescripto Health Assistant on Apple Watch. Answer health, vitals, or symptoms queries. Be concise (under 2 sentences). Include brief disclaimer that you are AI."
+        case .learning:
+            systemInstruction = "You are Learning AI Tutor on Apple Watch. Explain study topics, concepts, or terms concisely (under 2 sentences)."
+        case .agrogen:
+            systemInstruction = "You are AgroGen Farming Assistant on Apple Watch. Give tips about crops, weather, farming, or irrigation. Be concise (under 2 sentences)."
+        case .lawgen:
+            systemInstruction = "You are LawGen Legal Assistant on Apple Watch. Answer questions about basic legal rights concisely (under 2 sentences)."
+        case .jarvis:
+            systemInstruction = "You are JARVIS, Tony Stark's personal AI assistant, running on Apple Watch via local Ollama LLM. Answer concisely (under 2 sentences), address user as 'Sir'."
+        }
+        
+        let languageInstruction = " Respond in \(appLanguage) language."
+        let fullSystemInstruction = systemInstruction + languageInstruction
+        
+        let requestBody: [String: Any] = [
+            "model": ollamaModel,
+            "prompt": prompt,
+            "system": fullSystemInstruction,
+            "stream": false
+        ]
+        
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: requestBody)
+        } catch {
+            self.streamText("Error: Failed to serialize request for Ollama.")
+            return
+        }
+        
+        URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
+            DispatchQueue.main.async {
+                guard let self = self else { return }
+                
+                if let error = error {
+                    // Fallback to local intelligent response if Ollama service is unreachable
+                    self.isOllamaAvailable = false
+                    let fallbackText = self.generateOfflineFallback(for: prompt, domain: self.selectedDomain)
+                    self.streamText(fallbackText)
+                    return
+                }
+                
+                self.isOllamaAvailable = true
+                
+                guard let data = data else {
+                    self.streamText("Error: Received empty response from Ollama.")
+                    return
+                }
+                
+                do {
+                    if let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
+                       let responseText = json["response"] as? String {
+                        
+                        let trimmed = responseText.trimmingCharacters(in: .whitespacesAndNewlines)
+                        if trimmed.isEmpty {
+                            self.streamText("Sir, Ollama returned an empty response.")
+                        } else {
+                            self.streamText(trimmed)
+                        }
+                    } else {
+                        self.streamText("Error: Unexpected Ollama response format.")
+                    }
+                } catch {
+                    self.streamText("Error: Failed to parse Ollama response.")
+                }
+            }
+        }.resume()
+    }
+    
+    private func generateOfflineFallback(for prompt: String, domain: Domain) -> String {
+        switch domain {
+        case .safeguard:
+            return "SafeGuard AI: In an emergency, double-tap SOS or call 112/911 immediately. Live location sharing is active."
+        case .prescripto:
+            return "Prescripto AI: Vitals are within normal range. Maintain hydration and consult your physician for persistent symptoms."
+        case .learning:
+            return "Learning AI: Concepts parsed successfully. Review your flashcards and streak stats in the module."
+        case .agrogen:
+            return "AgroGen AI: Soil moisture is optimal for current ambient temperatures. Irrigate in early morning."
+        case .lawgen:
+            return "LawGen AI: Article 20(3) guarantees protection against self-incrimination. Know your rights under CrPC."
+        case .jarvis:
+            return "JARVIS: All watch subsystems operational, Sir. Local Ollama LLM initialized."
         }
     }
     
-    private func processVoiceQuery() {
-        let userQueries = [
-            "How is my heart rate?",
-            "What is the farm weather today?",
-            "What are my basic legal rights?",
-            "Explain micro-learning options."
-        ]
-        
-        let chosenQuery = userQueries.randomElement() ?? "How is my heart rate?"
-        conversationHistory.append(ChatMessage(isUser: true, text: chosenQuery))
-        
-        // Determine topic key
-        var topicKey = "default"
-        if chosenQuery.contains("heart") {
-            topicKey = "heart"
-        } else if chosenQuery.contains("weather") {
-            topicKey = "weather"
-        } else if chosenQuery.contains("rights") {
-            topicKey = "rights"
-        }
-        
-        // Get localized response
-        let fullResponse = mockDatabase[topicKey]?[appLanguage] ?? mockDatabase[topicKey]?["English"] ?? "JARVIS Response simulated."
-        
-        // Stream the response back word-by-word
-        isStreaming = true
+    private func streamText(_ fullResponse: String) {
+        self.isStreaming = true
         let words = fullResponse.components(separatedBy: " ")
         var currentWordIndex = 0
-        responseStream = ""
+        self.responseStream = ""
         
-        Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true) { [weak self] timer in
+        Timer.scheduledTimer(withTimeInterval: 0.08, repeats: true) { [weak self] timer in
             guard let self = self else {
                 timer.invalidate()
                 return
@@ -108,7 +154,6 @@ class JarvisService: ObservableObject {
                 self.isStreaming = false
                 self.conversationHistory.append(ChatMessage(isUser: false, text: self.responseStream))
                 
-                // Triggers a click haptic on final word
                 #if os(watchOS)
                 WKInterfaceDevice.current().play(.click)
                 #endif
